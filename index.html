@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission</title>
+    <style>
+    .parent 
+     { display:flex; 
+       height: 100%;
+     }
+    .child
+     { flex-grow:1;
+       padding: 0.5cm;
+     }
+    h1
+     { text-align: center; }
+    label
+     { padding: 0.1cm;
+      
+     } 
+    input
+     { padding: 0.1 cm;
+       text-align: center;
+     }
+    body
+     { font-style: normal;
+       font-family: Arial, Helvetica, sans-serif;
+     }
+    </style>
+</head>
+<body>
+    <h1>General Admission Registration</h1>
+    <div class="parent">
+        <div class="child left" style="width: 50%;">
+            <form>
+                <!--Name-->
+                <label for="name">Name</label>
+                 <input type="text" id="fname" name="fname" placeholder="First Name">
+                 <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+                <!--Email-->
+                 <label for="email">Email</label>
+                 <input type="text" id="email" name="email" placeholder="sample@example.com"><br><br>
+                <!--Gender-->
+                <label for="gender">Gender</label>
+                 <input type="radio" id="Male" name="gender">
+                 <label for="gender">Male</label> 
+                 <input type="radio" id="Female" name="gender">
+                 <label for="gender">Female</label><br><br>
+                <!--Phone-->
+                 <label for="phone">Phone</label>
+                 <input type="text" id="phone" name="phone"><br><br>
+                <!--Emergency Contact-->
+                <label for="EC">Emergency Contact</label>
+                 <input type="text" id="EC" name="EC"><br><br>
+                <!--Parking-->
+                 <label for="parking">Do you require parking?</label><br><br>
+                    <input type="radio" id="Yes" name="parking">
+                    <label for="Y">Yes</label> 
+                    <input type="radio" id="No" name="parking">
+                    <label for="N">No</label><br><br>
+                 <!--Room Preference-->
+                 <label for="room">What is your Room Preference?</label><br><br>
+                 <input type="radio" id="S_room" name="room">
+                 <label for="sroom">Single Room</label><br> 
+                 <input type="radio" id="sh_room" name="room">
+                 <label for="shroom">Shared Room</label><br>
+                 <input type="radio" id="no_room" name="room">
+                 <label for="nroom">No Room Needed</label><br><br>
+            </form>
+        </div>
+        <hr>
+        <div class="child right" style="width: 50%;">
+            <form>
+                <!--Dietary Restrictions-->
+                 <label for="Res">Do you have dietary restrictions?</label><br><br>
+                 <input type="radio" id="none" name="Res">
+                 <label for="Res">None</label><br> 
+                 <input type="radio" id="veg" name="Res">
+                 <label for="Res">Vegetarian</label><br>
+                 <input type="radio" id="Glutten" name="Res">
+                 <label for="nroom">Glutten Allergy</label><br>
+                 <input type="radio" id="Lactose" name="Res">
+                 <label for="nroom">Lactose Allergy</label><br>
+                 <input type="radio" id="Nut" name="Res">
+                 <label for="nroom">Nut Allergy</label><br>
+                 <input type="radio" id="Shellfish" name="Res">
+                 <label for="nroom">Shellfish Allergy</label><br><br>
+                <!--Activities-->
+                 <label for="act">What activities will you attend?</label><br><br>
+                 <input type="radio" id="room" name="act">
+                 <label for="sroom">Awards Gala Dinner</label><br> 
+                 <input type="radio" id="room" name="act">
+                 <label for="shroom">Luncheon</label><br>
+                 <input type="radio" id="room" name="act">
+                 <label for="nroom">Glutten Allergy</label><br><br>
+                <!--Event App-->
+                 <label for="app">Do you want to see the list of other attendees and their profiles on the official event app?</label><br><br>                 
+                 <input type="radio" id="yes" name="app">
+                 <label for="Y" name="app">Yes</label> 
+                 <input type="radio" id="No" name="app">
+                 <label for="N">No</label><br><br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
